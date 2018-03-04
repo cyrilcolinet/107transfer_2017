@@ -6,9 +6,7 @@
 ##
 
 all:
-	cat src/main.py > 107transfer
-	echo -e "\n" >> 107transfer
-	cat src/transfert_functions.py >> 107transfer
+	cat src/107transfer.py > 107transfer
 	chmod +x 107transfer
 
 clean:
