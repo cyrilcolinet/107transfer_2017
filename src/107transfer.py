@@ -5,7 +5,7 @@
 ## 107transfert file
 ##
 
-import sys
+from sys import argv
 
 def get_polynom(av):
 	num = []
