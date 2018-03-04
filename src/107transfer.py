@@ -1,9 +1,12 @@
+#!/usr/bin/env python
+
 ##
 ## EPITECH PROJECT, 2018
 ## 107transfert_2017
 ## File description:
-## 107transfert file
+## main file maths project
 ##
+
 
 from sys import argv
 
@@ -40,16 +43,15 @@ def transfert(av):
 		x += 0.001
 
 if (__name__ == "__main__"):
-	av = list(sys.argv);
+	av = list(argv);
 	av.pop(0)
 	if (len(av) == 0):
 		print("Usage: ./107tranfert <num> <den>")
 		exit(84)
 	elif (len(av) == 1 and av[0] == "-h"):
 		print("USAGE\n\t./107transfer <num> <den>*\n")
-		print("\nDESCRIPTION\n\tnum\tpolynomial numerator defined ")
-		print("by its coefs\n\tden\tpolynomial denominator defined by")
-		print(" its coefs\n")
+		print("DESCRIPTION\n\tnum\tpolynomial numerator defined by its coefficients")
+		print("\tden\tpolynomial denominator defined by its coefficients")
 	elif (len(av) % 2 != 0):
 		print("Usage: ./107tranfert <num> <den>")
 		exit(84)
