@@ -6,14 +6,15 @@
 ##
 
 all:
-	cat src/main.py > 107transfert
-	echo -e "\n" >> 107transfert
-	cat src/transfert_functions.py >> 107transfert
-	chmod +x 107transfert
+	cat src/main.py > 107transfer
+	echo -e "\n" >> 107transfer
+	cat src/transfert_functions.py >> 107transfer
+	chmod +x 107transfer
 
 clean:
+	rm -rf file
 
 fclean: clean
-	rm -rf 107transfert
+	rm -rf 107transfer
 
 re: fclean all
